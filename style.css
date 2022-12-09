@@ -1,0 +1,240 @@
+body{
+   background-image: url(./image28.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0;
+}
+
+.container{
+   display: flex;
+   margin: 0;
+   height: 100vh;
+   background-image: radial-gradient(circle, #000851F5, #081865C2, #11277a78, #18378f2B, #1d48a50A);
+}
+
+.infoContainer{
+   flex: 2.3;
+   margin: 0;
+}
+#search{
+   display: flex;
+   justify-content: center;
+   margin-top: 15px
+   }
+input{
+   padding: 15px;
+   margin-top: 35px;
+   font-family: 'Prosto One', cursive;
+   box-shadow: rgba(255, 219, 190, 0.4) 0px 7px 29px 0px;
+   border-radius: 5px;
+}
+p{
+   padding-right: 10px;
+}
+#location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Prosto One', cursive;
+  font-size: 24px;
+  color: rgb(255, 219, 190);
+    }
+
+#timeAndDate{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Prosto One', cursive;
+  color: azure;
+}
+#date{
+  font-size: 18px; 
+}
+#time{
+   font-size: 16px;
+}
+#date{
+   margin: 0;
+}
+
+#temperatureSection{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   font-family: 'Prosto One', cursive;
+  font-size: 18px;
+  color: rgb(255, 219, 190);
+  margin: 10px;
+  padding: 0;
+  margin-top: 0;
+}
+
+#currentTemp, #feelsTemp, #condition{
+ padding-right: 28px;
+ font-size: 26px;
+ text-shadow: 2px 2px 5px rgb(78, 4, 41);
+}
+
+#cloudAndHumidity{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: 10px;
+   margin-top: 0;
+   font-family: 'Prosto One', cursive;
+   font-size: 16px;
+  color: azure;
+}
+
+#cloudsPercent, #humidity{
+   padding-right: 25px;
+   }
+
+#uv{
+  display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 0;
+   font-family: 'Prosto One', cursive; 
+   color: rgb(255, 219, 190);
+}
+#uvIndex{
+   padding-left: 25px;
+}
+
+#forecastButton{
+   display: flex;
+  justify-content: center;
+  text-align: center;
+   font-family: 'Prosto One', cursive;
+   margin: auto;
+   margin-top: 20px;
+   padding: 14px;
+   border: none;
+   background-color: azure;
+}
+#forecastButton:hover{
+   background-color: rgb(255, 219, 190);
+}
+
+#forecastContainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   font-family: 'Prosto One', cursive; 
+   margin-top: 20px;
+   margin-bottom: 50px;
+}
+
+#forecast{
+   display: none; 
+}
+
+.blockOne, .blockTwo, .blockThree{
+border: 0.2px solid rgb(255, 219, 190);
+background-color: rgba(15,42,108, 0.4);
+text-align: center;
+padding: 15px;
+margin: 10px;
+color: azure;
+width: 200px;
+}
+
+#dayOneTemp, #dayTwoTemp, #dayThreeTemp{
+   color: rgb(255, 219, 190);
+   text-shadow: 2px 2px 5px rgb(78, 4, 41);
+}
+
+@media all and (max-width: 1000px){
+   #location{
+      font-size: 20px;
+   }
+   #timeAndDate{
+      font-size: 17px;
+      text-align: center;
+   }
+   #temperatureSection{
+    font-size: 18px;
+    text-align: center;
+   }
+   #forecastButton{
+      padding: 10px;
+   }
+   #forecastContainer{
+      font-size: 16px;
+   }
+   #currentTemp, #feelsTemp, #condition{
+      font-size: 22px;
+   }
+
+   }
+   @media all and (max-width: 700px){
+      #location{
+         font-size: 18px;
+      }
+      #timeAndDate{
+         font-size: 16px;
+         text-align: center;
+      }
+      #temperatureSection{
+       font-size: 16px;
+       text-align: center;
+      }
+      #forecastButton{
+         padding: 10px;
+      }
+      #forecastContainer{
+         font-size: 14px;
+      }
+      #currentTemp, #feelsTemp, #condition{
+         font-size: 20px;
+      }
+ 
+      }
+@media all and (max-width: 600px){
+#location{
+   font-size: 18px;
+}
+#timeAndDate{
+   font-size: 15px;
+   text-align: center;
+}
+#temperatureSection{
+ font-size: 17px;
+ flex-wrap: wrap;
+}
+#forecastButton{
+   padding: 10px;
+}
+#forecastContainer{
+   font-size: 16px;
+}
+.blockOne, .blockTwo, .blockThree{
+   width: 180px;
+}
+.photoContainer,.photoContainerTwo{
+   display: none;
+}
+#currentTemp, #feelsTemp, #condition{
+ padding-right: 0;
+   
+}
+#cloudsPercent, #humidity{
+   padding-right: 0;
+   }
+   #forecastButton{
+      margin: auto;
+      padding: 10px;
+      font-size: 14px;
+   }
+}

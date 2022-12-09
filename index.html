@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+    
+      <div class="infoContainer">
+        <div id="search" >
+          <input id="searchInput" type="text" placeholder="City..." />
+        </div>
+
+        <div id="location">
+          <p id="cityAndCountry">Karakol, Kyrgyzstan</p>
+          
+        </div>
+
+        <div id="timeAndDate">
+          <p id="date">September 07, 2021</p>
+          <p id="time">14:00</p>
+        </div>
+
+        <div id="temperatureSection">
+          <p>Now: <span id="currentTemp">19°</span></p>
+        <p id="feelsLike">
+          Feels like: <span id="feelsTemp">19°</span>
+        </p>
+        <p id="condition">Clear</p>
+        <p id="cloud">
+         </div> 
+         <div id="cloudAndHumidity">
+          <p>Clouds:&ensp; <span id="cloudsPercent"> 0% </span>
+        </p>
+        <p>
+          Humidity: &ensp;<span id="humidity">22%</span>
+        </p>
+        </div>
+
+        <div id="uv">
+          <p>UV:</p>
+          <p id="uvIndex">2 </p>
+          
+        </div>
+        
+          <button id="forecastButton">Weather forecast for the next 3 days:</button>
+<div id="forecast">
+          <div id="forecastContainer">
+          <div class="blockOne">
+            <div id="dateOne">Date</div>
+            <p id="dayOneTemp">Min temp:&ensp;<span id="minTempOne"></span></p>
+            <p id="dayOneTemp">Max temp:&ensp;<span id="maxTempOne"></span></p> 
+            <p id="conditionOne">Clear</p>
+            <p id="rainOne">Rain: 20%</p>
+          </div>
+
+          <div class="blockTwo">
+            <div id="dateTwo">Date</div>
+            <p id="dayTwoTemp">Min temp:&ensp;<span id="minTempTwo"></span></p>
+            <p id="dayTwoTemp">Max tempe:&ensp;<span id="maxTempTwo"></span></p> 
+            <p id="conditionTwo">Clear</p>
+            <p id="rainTwo">Rain: 20%</p>
+          </div>
+
+          <div class="blockThree">
+            <div id="dateThree">Date</div>
+            <p id="dayThreeTemp">Min temp:&ensp;<span id="minTempThree"></span></p>
+            <p id="dayThreeTemp">Max temp: &ensp;<span id="maxTempThree"></span></p> 
+            <p id="conditionThree">Clear</p>
+            <p id="rainThree">Rain: 20%</p>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    </div>
+    
+    <script src="script.js"></script>
+    
+  </body>
+</html>
